@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test07</title>
+		
+		<style type="text/css">
+			#box{
+				width: 50px;
+				height: 50px;
+				background-color: #FF0000;
+			}
+		</style>
+		
+	
+	</head>
+	<body>
+		<div id = "box">
+			
+		</div>
+		
+		
+		<script type="text/javascript">
+			var jsDiv = document.getElementById("box")
+			var basex = 0
+			var basey = 0
+			var movx = 0
+			var movy = 0
+			jsDiv.addEventListener("mousedown",function(e){
+				var ev = e||window.event
+				var basex = ev.pageX
+				var basey = ev.pageY
+				
+				document.addEventListener("mousemove",function(e){
+					var ee = e||window.event
+					
+					movx = ee.pageX-basex
+					basex = ee.pageX
+					
+					movy = ee.pageY-basey
+					basey = ee.pageY
+					
+					jsDiv.style.left = jsDiv.offsetLeft+movx+"px"
+					jsDiv.style.top = jsDiv.offsetTop+movy+"px"
+				},false)
+				
+			},false)
+			
+		</script>
+
+	</body>
+</html>

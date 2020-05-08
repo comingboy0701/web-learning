@@ -1,0 +1,55 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#box{
+	width: 300px;
+	height: 200px;
+	background: none;
+	position: relative;
+	margin: 0 auto;
+}
+#pic{
+	width: 300px;
+	height: 200px;
+	background: none;
+}
+
+.bt{
+	width: 50px;
+	height: 80px;
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 80px;
+	font-size: 30px;
+	position: absolute;
+	top:60px;
+	display:None;
+}
+
+#left{
+	left: 0px;
+}
+#right{
+	left: 250px;
+}
+
+#list{
+	list-style: none;
+	position: absolute;
+	bottom: 20px;
+	left:30px;
+	
+}
+#list li{
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #aaa;
+	text-align: center;
+	line-height: 20px;
+}
+

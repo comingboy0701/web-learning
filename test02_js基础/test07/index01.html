@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="idDiv">abc</div>
+		<div class="classDiv"></div>
+		<div class="classDiv"></div>
+		<div class="classDiv"></div>
+		<input type="text" name="inputText" />
+		<input type="text" name="inputText" />
+		<input type="text" name="inputText" />
+		<input type="text" name="inputText" />
+		<script type="text/javascript">
+			var jsDiv = document.getElementById("idDiv")
+			console.log(jsDiv)
+			
+			var jsDivsLArr = document.getElementsByClassName("classDiv")
+			console.log(jsDivsLArr)
+			
+			var jsDivsName = document.getElementsByName("inputText")
+			console.log(jsDivsName)
+			
+		</script>
+	</body>
+</html>

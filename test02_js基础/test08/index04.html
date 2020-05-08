@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+		
+		<button type="button" onclick="func()">换颜色</button>
+		
+		<script type="text/javascript">
+			var jsDiv = document.getElementById("box")
+			console.log(jsDiv)
+			
+			var jsStyle = window.getComputedStyle(jsDiv,null).background
+			console.log(jsStyle)
+			
+			function func(){
+				
+				jsDiv.style.backgroundColor= "#00ff00"
+				jsDiv.style.width= "200px"
+				jsDiv.style.height= "200px"
+			}
+			
+			
+			
+			
+		</script>
+	
+	</body>
+</html>

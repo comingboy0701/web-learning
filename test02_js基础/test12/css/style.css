@@ -1,0 +1,21 @@
+#box1{
+	width: 40px;
+	height: 20px;
+	background: #F00;
+}
+
+#box2{
+	width: 40px;
+	height: 20px;
+	background: #FF0;
+}
+#box3{
+	width: 40px;
+	height: 20px;
+	background: #0F0;
+}
+#box4{
+	width: 40px;
+	height: 20px;
+	background: #00F;
+}

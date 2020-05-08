@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test12</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<ul>
+			<li>鼠标进入变红色</li>
+			<li>鼠标离开变蓝色</li>
+			<li>鼠标按下变2倍</li>
+			<li>鼠标抬起小2倍</li>
+		</ul>
+
+		<script type="text/javascript">
+			var lis = document.getElementsByTagName('li')
+			for (var i = 0;i<lis.length;i++) {
+				lis[i].addEventListener("mousemove",function(){
+					this.style.backgroundColor="red"
+				})
+				lis[i].addEventListener("mouseout",function(){
+					this.style.backgroundColor="blue"
+				})
+				lis[i].addEventListener("mousedown",function(){
+					this.style.fontSize=parseInt(getComputedStyle(this,null).fontSize)*2+"px"
+				})
+				lis[i].addEventListener("mouseup",function(){
+					this.style.fontSize=parseInt(getComputedStyle(this,null).fontSize)/2+"px"
+				})
+			}
+			document.addEventListener("mousemove",function(){
+				console.log("鼠标在移动")
+			})
+			
+		</script>
+
+	</body>
+</html>

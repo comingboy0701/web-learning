@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div id="box",style="3000px">
+			<p>1</p>
+			<p>2</p>
+		</div>
+
+		<script type="text/javascript">
+			var div = document.getElementById("box")
+			var a = document.createElement("p")
+			a.innerHTML="sunck is a good man"
+			a.style.backgroundColor = "red"  
+			console.log(a)
+			// jsDiv.appendChild(p)
+			// div.insertBefore(a,div.lastChild)
+			div.replaceChild(a,div.lastChild)
+			
+		</script>
+
+	</body>
+</html>

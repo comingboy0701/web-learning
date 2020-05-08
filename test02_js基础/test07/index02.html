@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button type="button" onclick="func()">按钮</button>
+		<input type="text" placeholder="请留下你的名字" id="in" my="我的" />
+		
+		
+		<script type="text/javascript">
+			var jsInput = document.getElementById("in")
+			console.log(jsInput)
+			var jsInput2 = jsInput.getAttribute("my")
+			
+			console.log(jsInput2)
+			
+			function func(){
+				// jsInput.placeholder="sunck is good man"//获取官方属性的节点
+				// console.log(jsInput)
+				// jsInput.setAttribute(jsInput2,"your")
+				// console.log(jsInput)
+				
+				jsInput.removeAttribute("placeholder")
+				console.log(jsInput)
+			}
+			
+			
+			
+			
+		</script>
+	
+	</body>
+</html>
