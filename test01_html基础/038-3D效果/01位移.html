@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			.box {
+				margin: 10px auto;
+				width: 1000px;
+				height: 300px;
+				border: 1px #000 solid;
+				}
+			p {	width: 200px;
+				height: 200px;
+				border: 1px #f00 solid;
+				float: left;
+				margin: 50px;
+				text-align: center;
+				line-height:200px;
+				transform-style: preserve-3d;
+				perspective: 800px;
+				}
+				span {
+					display: block;
+					width: 200px;
+					height: 200px;
+					background: rgba(255,0,0,0.5);
+					transition: all 2s;
+				}
+			p:nth-child(1) span:hover{transform: rotateX(45deg);}
+			p:nth-child(2) span:hover{transform: rotateY(45deg);}
+			p:nth-child(3) span:hover{transform: rotateZ(45deg);}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p><span>X轴旋转</span></p>
+			<p><span>Y轴旋转</span></p>
+			<p><span>Z轴旋转</span></p>
+		</div>
+	</body>
+</html>
